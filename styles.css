@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 75%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fredoka One", cursive;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9;
+  background-color: #f3f3f3;
+}
+
+/* GENERAL ELEMENTS */
+.nav-title {
+  padding: 10px;
+  font-size: 35px;
+}
+.section {
+  padding: 15em 3em;
+  border-top: 1px solid #ddd;
+
+  transition: transform 1s, opacity 1s;
+}
+
+.section__title {
+  max-width: 80rem;
+  margin: 0 auto 8rem auto;
+}
+/* 
+.card {
+  border-radius: 0.69em;
+  box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 75%;
+}
+
+.card:hover {
+  box-shadow: 0 1em 6em 0 rgba(0, 0, 0, 0.2);
+} */
+
+.container {
+  padding: 3% 5%;
+}
+
+.card-header {
+  padding: 1em 2em;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0.25em;
+  box-shadow: 0 0.25em 0.69em 0 rgba(0, 0, 0, 0.3);
+}
+.link-details {
+  width: 40%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  height: 75%;
+}
+
+.link-area {
+  background: linear-gradient(
+    360deg,
+    rgba(255, 136, 144, 1) 0%,
+    rgba(240, 162, 167, 1) 100%
+  );
+  border-radius: 0.25em;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0.25em 0.35em 0.05em rgba(0, 0, 0, 0.3);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 3em 0;
+  align-content: center;
+}
+
+hr {
+  opacity: 0.2;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+.link-btns {
+  border-radius: 2em;
+  font-family: "Fredoka One", cursive;
+  font-size: 20px;
+  padding: 0.69em;
+  box-shadow: 0 0.25em 0.35em 0.05em rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in-out;
+  background-color: #4bbb7d;
+  color: seashell;
+  border: none;
+}
+
+.link-btns:hover {
+  transform: scale(1.1);
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .link-btns {
+    font-size: 12px;
+  }
+}
