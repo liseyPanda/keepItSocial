@@ -176,6 +176,7 @@ p {
       background-color: seashell;
       color: rgba(255, 120, 149, 1);
       font-size: 12px;
+      font-family: "Trebuchet MS", "Lucida Grande";
     }
   }
 }
@@ -187,6 +188,7 @@ p {
       background-color: seashell;
       color: rgba(255, 120, 149, 1);
       font-size: 12px;
+      font-family: "Trebuchet MS", "Lucida Grande";
     }
   }
 }
@@ -197,5 +199,6 @@ p {
     background-color: seashell;
     color: rgba(255, 120, 149, 1);
     font-size: 12px;
+    font-family: "Trebuchet MS", "Lucida Grande";
   }
 }
