@@ -36,23 +36,6 @@ body {
   max-width: 80rem;
   margin: 0 auto 8rem auto;
 }
-/* 
-.card {
-  border-radius: 0.69em;
-  box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 40%;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 25%;
-  height: 75%;
-}
-
-.card:hover {
-  box-shadow: 0 1em 6em 0 rgba(0, 0, 0, 0.2);
-} */
 
 .container {
   padding: 3% 5%;
@@ -70,8 +53,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 35%;
-  height: 75%;
+  height: 80%;
+  padding-bottom: 45%;
 }
 
 .link-area {
@@ -82,9 +65,9 @@ body {
   );
   border-radius: 0.25em;
   font-size: 17px;
-  display: flex;
   justify-content: center;
   text-align: center;
+  display: flex;
   box-shadow: 0 0.25em 0.35em 0.05em rgba(0, 0, 0, 0.3);
 }
 
@@ -112,7 +95,7 @@ p {
 
 .link-btns {
   border-radius: 2em;
-  font-family: "Fredoka One", cursive, "Montserrat", sans-serif;
+  font-family: "Fredoka One", cursive, "Playfair Display", "Didot";
   font-size: 20px;
   padding: 0.69em;
   box-shadow: 0 0.25em 0.35em 0.05em rgba(0, 0, 0, 0.3);
@@ -127,20 +110,92 @@ p {
 }
 
 /* Media Queries: Tabled Portrait */
-@media screen and (max-height: 900px) {
+@media screen and (max-width: 1400px) {
   h1 {
     font-size: 20px;
   }
   p {
     font-size: 15px;
   }
+  .second-header {
+    font-size: 25px;
+  }
+
+  .blurb {
+    font-size: 13px;
+  }
   .link-btns {
-    font-size: 14px;
+    font-size: 20px;
   }
   .link-details {
     position: fixed;
     top: 50%;
     left: 50%;
     width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 13px;
+  }
+  p {
+    font-size: 12px;
+  }
+
+  li {
+    margin: 2em;
+  }
+
+  hr {
+    opacity: 0;
+  }
+  .second-header {
+    opacity: 0;
+  }
+
+  .blurb {
+    font-size: 13px;
+  }
+  .link-btns {
+    font-size: 12px;
+    margin: none;
+  }
+
+  .link-details {
+    margin: none;
+    top: 45%;
+    left: 50%;
+    width: 100%;
+  }
+}
+
+/* Safari 11+ */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .link-btns {
+      background-color: seashell;
+      color: rgba(255, 120, 149, 1);
+      font-size: 12px;
+    }
+  }
+}
+
+/* Safari 10.1 */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (not (stroke-color: transparent)) {
+    .link-btns {
+      background-color: seashell;
+      color: rgba(255, 120, 149, 1);
+      font-size: 12px;
+    }
+  }
+}
+
+/* Safari 6.1-10.0 (but not 10.1) */
+@media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
+  .link-btns {
+    background-color: seashell;
+    color: rgba(255, 120, 149, 1);
+    font-size: 12px;
   }
 }
